@@ -98,7 +98,6 @@ for versenyzo in versenyzok:
 versenyzok_pontszama = sorted(zip(versenyzo_kod, elert_pontszamok), key=lambda x: x[1], reverse=True)
 
 for count, x in enumerate(versenyzok_pontszama, start=1):
-    thisx = x
     nextx = versenyzok_pontszama[versenyzok_pontszama.index(x) - len(versenyzok_pontszama) + 1]
     if count > 1:
         prevx = versenyzok_pontszama[versenyzok_pontszama.index(x) - len(versenyzok_pontszama) - 1]
